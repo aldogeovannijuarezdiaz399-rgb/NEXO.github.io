@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXO | Nuestro Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-logo">NEXO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+
+<header>
+    <h1>Dispositivo NEXO</h1>
+    <p>Tecnología enfocada en el bienestar emocional</p>
+</header>
+
+<section class="device fade">
+    <div class="device-content">
+        <img src="Aparato.png" alt="Dispositivo NEXO" class="device-img">
+        <p>
+            El dispositivo NEXO es una solución innovadora diseñada para ayudar
+            a reducir el estrés y la ansiedad en entornos académicos y laborales.
+            Su diseño ergonómico y portátil permite utilizarlo en cualquier momento.
+        </p>
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="info-card">
+        <h2>Beneficios</h2>
+
+        <ul class="benefits-list">
+            <li>✔ Reduce el estrés y la ansiedad</li>
+            <li>✔ Mejora la concentración y el enfoque</li>
+            <li>✔ Diseño portátil y fácil de usar</li>
+            <li>✔ Ideal para estudiantes y oficinas</li>
+            <li>✔ Promueve el bienestar emocional</li>
+        </ul>
+    </div>
+</section>
+
+<section class="use fade">
+    <h2>¿Cómo se usa?</h2>
+    <p>
+        El dispositivo NEXO se utiliza de forma sencilla, integrándose en la rutina
+        diaria del usuario para generar estímulos que promueven la calma y el enfoque.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 NEXO | Proyecto de emprendimiento</p>
+</footer>
+
+<script>
+    window.addEventListener("scroll", () => {
+        document.querySelector(".navbar")
+            .classList.toggle("scrolled", window.scrollY > 20);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXO | Bienestar y Equilibrio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+    <div class="nav-logo">NEXO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+
+<header id="inicio">
+<section id="about" class="about">
+<section id="device" class="device">
+<section id="mission" class="mission">
+    <h1>NEXO</h1>
+    <p>Conectando bienestar, innovación y equilibrio emocional</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+</header>
+
+<section class="info-section">
+    <div class="info-card">
+        <h2>¿Qué es NEXO?</h2>
+        <p>
+            NEXO es un proyecto de emprendimiento enfocado en el desarrollo de un
+            dispositivo innovador para ayudar a reducir la ansiedad y el estrés.
+            Está dirigido a estudiantes, docentes y personas de oficina.
+        </p>
+
+        <img src="dispositivo.png" alt="Logo NEXO" class="info-image">
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="info-card">
+        <h2>Nuestro Dispositivo</h2>
+        <p>
+            El dispositivo NEXO está diseñado para promover la calma y la
+            concentración mediante estímulos que favorecen el bienestar emocional.
+            Es portátil, fácil de usar y adaptable a distintos entornos como
+            escuelas, oficinas y hogares.
+        </p>
+
+<div class="carousel">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+
+    <div class="carousel-images">
+        <img src="uso1.jpg.png" class="carousel-img active" alt="Persona usando NEXO">
+        <img src="uso2.jpg  .png" class="carousel-img" alt="Estudiante usando NEXO">
+        <img src="uso3.jpg.png" class="carousel-img" alt="Persona en oficina usando NEXO">
+    </div>
+
+    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+</div>
+
+    </div>
+</section>
+
+<section class="product-link fade">
+    <h2>Conoce nuestro producto</h2>
+    <p>
+        Descubre cómo funciona el dispositivo NEXO y cómo puede ayudarte
+        a reducir el estrés y la ansiedad.
+    </p>
+    <a href="producto.html" class="btn">Ver el producto</a>
+</section>
+
+<section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 NEXO | Proyecto de emprendimiento</p>
+</footer>
+
+<section class="about fade">
+<section class="device fade">
+<section class="mission fade">
+
+<script>
+    window.addEventListener("scroll", () => {
+        document.querySelector(".navbar")
+            .classList.toggle("scrolled", window.scrollY > 20);
+    });
+</script>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".carousel-img");
+
+    function moveSlide(direction) {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }
+</script>
+
+</body>
+</html>

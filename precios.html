@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXO | Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-logo">NEXO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Planes y precios</h1>
+    <p>Opciones accesibles pensadas para estudiantes y profesionales</p>
+</header>
+
+<section class="info-section" id="precios">
+    <div class="info-card">
+        <h2>Planes y Precios</h2>
+        <p>
+            Nuestros precios están diseñados con base en el impacto real que el
+            dispositivo NEXO genera en la reducción del estrés, la mejora de la
+            concentración y el bienestar emocional.
+        </p>
+
+        <section id="precios" class="pricing-section">
+
+  <div class="price-card">
+    <h3>Plan Básico</h3>
+    <h2>$250 MXN</h2>
+    <ul>
+      <li>✔ Reducción del estrés leve</li>
+      <li>✔ Mejora de concentración</li>
+      <li>✔ Diseño portátil</li>
+      <li>✔ Materiales seguros</li>
+    </ul>
+    <a href="#contacto" class="btn-comprar">Contratar</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Plan Avanzado</h3>
+    <h2>$450 MXN</h2>
+    <ul>
+      <li>✔ Estímulos personalizables</li>
+      <li>✔ Uso prolongado sin fatiga</li>
+      <li>✔ Mayor durabilidad</li>
+      <li>✔ Ideal para oficinas</li>
+    </ul>
+    <a href="#contacto" class="btn-comprar">Contratar</a>
+  </div>
+
+  <div class="price-card premium">
+    <h3>Plan Premium</h3>
+    <h2>$800 MXN</h2>
+    <ul>
+      <li>✔ Uso institucional continuo</li>
+      <li>✔ Soporte técnico</li>
+      <li>✔ Materiales de alta resistencia</li>
+      <li>✔ Mayor vida útil</li>
+    </ul>
+    <a href="#contacto" class="btn-comprar">Contratar</a>
+  </div>
+
+</section>
+
+<footer>
+    <p>© 2026 NEXO | Proyecto de emprendimiento</p>
+</footer>
+
+<li><a href="precios.html" class="active">Precios</a></li>
+
+<script>
+    window.addEventListener("scroll", () => {
+        document.querySelector(".navbar")
+            .classList.toggle("scrolled", window.scrollY > 20);
+    });
+</script>
+
+</body>
+</html>
